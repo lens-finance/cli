@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+from ttyf_cli.cli import cli_entrypoint
+
+from rich.console import Console
+from rich.panel import Panel
+
+console = Console()
+
+
+if __name__ == "__main__":
+    console.print(Panel.fit("💰 Talk to your finances 💰", 
+                        border_style="green"))
+    cli_entrypoint()

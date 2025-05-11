@@ -1,0 +1,22 @@
+[project]
+name = "lens-cli"
+version = "0.1.0"
+description = "The CLI for TTYF (Talk To Your Finances)"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "click>=8.1.8",
+    "keyring>=25.6.0",
+    "plaid-python>=31.0.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.1.0",
+    "rich>=14.0.0",
+    "structlog>=25.3.0",
+]
+
+[project.scripts]
+ttyf = "ttyf_cli.cli:cli_entrypoint"
+
+[build-system]
+requires = ["setuptools>=80.3.1"]
+build-backend = "setuptools.build_meta"
